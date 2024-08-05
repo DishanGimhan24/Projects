@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+}
+
+.candidate-list {
+    list-style: n;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.candidate-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.candidate-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.candidate-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.candidate-details h2 {
+    margin-bottom: 5px;
+}
+

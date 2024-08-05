@@ -1,0 +1,51 @@
+body {
+
+    background-image: url('https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2021-12/211220-year-end-voting-rights-main-2x1-an-7d0446.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+.box {
+    /*border: 1px solid black;*/
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    box-shadow:
+        10px 12px 13px rgba(0, 0, 0, 0.6);
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translate(5px, 5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Added styles for rectangular shape */
+.box {
+    border-radius: 10;
+    /* Remove border-radius to make it rectangular 
+    */
+}
+
+canvas {
+    width: 400px;
+    /* Set the desired width */
+    height: 400px;
+    /* Set the desired height */
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #015266;
+}

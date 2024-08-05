@@ -1,0 +1,68 @@
+body {
+    background-image: url("1images/90.jpeg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 2px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.about-section {
+    width: 70%;
+    float: left;
+    padding: 20px;
+    background-color: rgba(163, 163, 167, 0.8);
+    box-shadow: 5px 5px 5px 5px rgba(26, 24, 24, 0.2);
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(133, 136, 127);
+    margin-left: 40px;
+    margin-right: 180px;
+    margin-top: 60px;
+}
+.about-section h2 {
+    color: #101010;
+}
+
+.backimg{
+    background-image: url(../img//Picture1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+.about-section p {
+    color: #08246d;
+    line-height: 1.6;
+    
+}
+.learn-more-button {
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: rgb(163, 167, 167);
+    border-radius: 25px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+}
+.image-section {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    margin-right: 70px;
+    margin-top: 50px;
+}
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+body{
+    background-image: url(../about.....jpeg);
+}

@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/TP.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+h2{
+    margin: auto;
+    color: aliceblue;
+    align-items: center;
+}
+
+/*.award-box{
+    max-width: 400px;
+    /*background-color: #111;
+    color: #fff;
+    font-family: "Montserrat";
+    padding: 60px 30px; 
+   display: flex;  
+
+    position: relative;
+    width: 700px;
+    height: 200px; 
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+*/
+.award-box{
+    width: 900px;
+    height: 300px;
+    margin: auto;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 10px; 
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display:flex;
+   justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+
+}
+/*.award-box.award-box.text-award{
+    display: flex;
+    flex-direction: row;
+}*/
+
+.text{
+    color:aliceblue;
+    width: 400px;
+    height: 200px;
+    background: transparent;
+    border: none;
+    border-radius:none;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    overflow: hidden;
+    padding-left:50px;
+    margin: auto;
+
+  
+    
+}
+
+
+
+.award-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+h3 {
+    align-self:flex-start;
+   
+    margin-left: 20px;
+    margin-top: 10px;
+    color: rgb(252, 216, 171);
+  }
+.img1{
+    width: 200px;
+    height: 250px;
+    margin:auto;
+    border-radius: 10px;
+}
+  
+
+
+
+
+
+

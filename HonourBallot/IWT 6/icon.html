@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        #submitBtn {
+            font-family: "Roboto", sans-serif;
+            color: aliceblue;
+            font-size: 18px;
+            font-weight: bold;
+            background: black;
+            width: 160px;
+            text-align: center;
+        }
+
+        .input-icons i {
+            position: absolute;
+        }
+
+        .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="submitregistration.php" method="post" onsubmit="return checkpassword()">
+        <h2>Sign Up</h2>
+
+        <div style="max-width:400px;margin:auto">
+            <div class="input-icons">
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="text">
+
+                <br><br>
+
+                <div class="field-group">
+                    <span class="icon"><i class="fas fa-id-card"></i></span>
+                    <input type="text" name="NIC" id="NIC" class="input-field" placeholder="NIC"
+                        pattern="[0-9]{12}+[V-v]" required>
+                </div>
+
+                <br><br>
+
+                <div class="field-group">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                    <input type="email" name="email" id="email" class="input-field"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" placeholder="Email" required>
+                </div>
+
+                <br><br>
+
+                <div class="field-group">
+                    <span class="icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="pwd" name="pwd" class="input-field"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{5,10}$"
+                        placeholder="Password" required>
+                </div>
+
+                <br><br>
+
+                <div class="field-group">
+                    <span class="icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="repwd" name="repwd" class="input-field"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{5,10}$"
+                        placeholder="Re-type password" required>
+                </div>
+
+                <br><br>
+
+                <input type="submit" id="submitBtn" value="Sign Up">
+    </form>
+
+    <br>Already have an account? <a href="login.php"><u>Login</u></a>
+
+</body>
+
+</html>

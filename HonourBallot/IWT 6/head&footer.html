@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        #submitBtn {
+            font-family: "Roboto", sans-serif;
+            color: aliceblue;
+            font-size: 18px;
+            font-weight: bold;
+            background: rgb(7, 6, 6);
+            width: 160px;
+            text-align: center;
+            margin-right: 0px;
+            margin-left: 100px;
+            /* Add this property to push the button to the right */
+            display: block;
+            /* Add this property to make the button a block element */
+            padding: auto;
+            border-radius: 25px;
+            margin-left: 100px;
+        }
+
+        .input-container {
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 25px;
+
+        }
+
+        .icon {
+            padding: 10px;
+            background: black;
+            color: rgb(255, 255, 255);
+            min-width: 50px;
+            text-align: center;
+            position: relative;
+            border-radius: 25px;
+            margin-left: 100px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+
+        }
+
+        .input-container input {
+            padding-left: 50px;
+            border-radius: 25px;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        body {
+            background-image: 1;
+            /* background-color: #cccccc;*/
+            /*margin: 50px 0px;*/
+            margin: auto;
+            padding: 0px;
+            text-align: center;
+            align: center;
+
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 35%;
+            height: 40px;
+            padding: 5px;
+            font-size: 16px;
+
+        }
+
+        #userName,
+        #fullName,
+        #NIC,
+        #email,
+        #pwd,
+        #repwd {
+            border-radius: 25px;
+            background: white;
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 5px;
+            width: 20%;
+            height: 40px;
+            box-sizing: border-box;
+            margin-left: 0px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+
+
+            /* Add this property to include padding and border in the width and height */
+
+
+        }
+
+        .secImage {
+            float: right;
+            width: auto;
+            height: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-block-end: auto;
+
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            margin-right: 800px
+                /* Add this property to create space between the heading and the form */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Registration Page</h1>
+    </header>
+
+
+    <form action="submitregistration.php" method="post" onsubmit="return checkpassword()">
+
+        <h2>Sign Up</h2>
+        <br>
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input type="text" name="userName" id="userName" placeholder="UserName" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+            <br><br>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input type="text" name="nic" id="NIC" placeholder="NIC" pattern="[0-9]{12}+[V-v]" required>
+            <br><br>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}"
+                placeholder="Email" required>
+            <br><br>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-lock icon"></i>
+            <input type="password" id="pwd" placeholder="Password" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-lock icon"></i>
+            <input type="password" id="repwd" placeholder="Re-type Password" required>
+            <br><br>
+        </div>
+
+
+        <input type="submit" id="submitBtn" value="Sign Up">
+    </form>
+
+    <footer>
+        &copy; 2023 Your Company. All rights reserved.
+    </footer>
+
+</body>
+<!--pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{5,10}$"-->
+
+</html>

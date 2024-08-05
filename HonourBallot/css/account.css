@@ -1,0 +1,160 @@
+body {
+    /*font-family: Arial, sans-serif;
+    margin: 3;
+    padding: 20px;*/
+    background-image: url('../background\ image\ foer.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.personal-details {
+    flex: 1;
+    text-align: left;
+    flex-basis: 50%;
+    padding-left: 40px;
+    color: rgb(240, 248, 242);
+}
+
+.personal-details input[type="text"] {
+        margin-bottom: 10px;
+        height: 20px;
+        width: 400px;
+    }
+    .personal-details .mail{
+      margin-bottom: 10px;
+      height: 20px;
+      width: 400px;
+      margin-left:0;
+    }
+
+.photo-upload {
+  border-radius: 20px;
+  margin: 0 150px 0 0 ;
+  border: 3px solid;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 280px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.photo-upload input[type="file"] {
+    margin-bottom: 10px;
+}
+.password-change {
+    width: 100%;
+    margin-top: 20px;
+}
+.password-change input[type="password"] {
+    margin-bottom: 10px;
+    height: 20px;
+    width: 600px;
+}
+.password-change button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="email"]{
+  width: 300px;
+}
+
+.password-change{
+  background-color: #ac9ca2;
+  background-color: none;
+  border-radius: 15px;
+  text-align: center;
+  width: auto;
+  height: 260px;
+  padding: 10px 20px 10px 20px;
+}
+
+button[type="submit"]{
+  border-radius: 15px;
+  background-color: blue;
+  color: rgb(198, 62, 62);
+  text-decoration: none;
+  border: 5px solid;
+  position: relative;
+  float: right;
+  
+}
+
+img{
+  width: 90px;
+  height: 90px;
+  align-items: center;
+
+}
+
+
+
+button[type="edit"]{
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  border: 3px solid;
+  cursor: pointer;
+}
+
+button[type="submit1"]{
+  cursor: pointer;
+  font-size: medium;
+  border-radius: 5px;
+  border: 2px;
+  color: rgb(32, 216, 87);
+  width: 100px;
+  height: 30px;
+  background-color: black;
+}
+
+.container{
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: rgb(158, 163, 167);
+  background-image: url('../aaa\ background\ image....jpeg');
+  background-repeat: no-repeat;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+    
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  margin: 5px;
+}
+
+
+
+  

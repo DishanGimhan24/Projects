@@ -1,0 +1,57 @@
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url(../pexels-codioful-\(formerly-gradienta\)-7135020.jpg);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header h2 {
+    margin: 0;
+}
+.search-bar {
+    width: 300px;
+    padding: 8px;
+}
+.candidate-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.candidate-box {
+    flex-basis: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.candidate-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.candidate-name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.candidate-category {
+    margin-top: 5px;
+    color: #888;
+}
+.candidate-details {
+    margin-top: 10px;
+}
+.vote-button {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+}
+.slide {
+    display:none;
+}
